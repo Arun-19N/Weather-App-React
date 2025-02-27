@@ -42,9 +42,10 @@ import './App.css';
 
 
 export const WeatherDeatiles = ({icon,temp,city,country,lat,log,humidy,wind,main,days}) =>{
+
   return(
     <>
-    <div className="output pb-4">
+    <div className="output   ">
     <div className="location fs-4 mt-1">City:{city}</div> <div className="location fs-4 mt-1">{days}</div>
   <div className="image">
     <img className='icon-part' data-aos='fade-up'  data-aos-duration='1000' src={icon} alt="sunny"  width='40%'/>
@@ -63,13 +64,13 @@ export const WeatherDeatiles = ({icon,temp,city,country,lat,log,humidy,wind,main
   <div className="data-container   d-flex">
     <div className="element me-5 ">
     <span className="">Humidity</span> <br />
-    <img src={humidyicon} alt="" className='hum-img' width='50%'/><div className="humidy-percentage   fs-6">{humidy}:%</div>
+    <img src={humidyicon} alt="" className='hum-img' width='50%'/><div className="humidy-percentage   fs-6"><div className='mb-5 mt-2'>{humidy}:%</div></div>
     </div>
 
     <div className="element ms-5 ">
     <span className="">Wind</span> <br />
     <img src={ windicon2} alt=""  className=" hum-img" width='50%'/>
-    <div className="humidy-percentage  fs-6"> {wind}:K/H</div>
+    <div className="humidy-percentage  fs-6"><div className='mb-5 mt-2'>{wind}:K/H</div></div>
     </div>
 
   </div>
@@ -332,7 +333,7 @@ const Search = async() =>{
 
   <div className="main-body"  style={{backgroundImage:`url(${background})`}}>
     <div className="card-body"  >
-      <div className="card mt-2" style={{color:textcolor}}>
+      <div className="card " style={{color:textcolor}}>
         <h1 className='mt-2'>Weather App</h1>
 
         <hr />
